@@ -880,6 +880,7 @@ target_compile_options(Falcor
         $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/w15038>  # data member 'member1' will be initialized after data member 'member2'
         $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/WX>      # warnings as errors
         $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/wd4251>  # 'type' : class 'type1' needs to have dll-interface to be used by clients of class 'type2'
+        $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/wd4819>  # The file contains a character that cannot be represented in the current code page (932)
         $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/wd4244>  # 'conversion' conversion from 'type1' to 'type2', possible loss of data
         $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/wd4267>  # 'var' : conversion from 'size_t' to 'type', possible loss of data
         $<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/MP>      # enable multi-processor compilation
